@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aditya Kumar's personal portfolio showcasing web development skills and projects.">
+  <title>Aditya Kumar | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a class="logo" href="#home">Aditya Kumar<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Aditya Kumar</h1>
+        <h2>Aspiring Software Developer</h2>
+        <p class="hero-text">
+          I build clean, responsive and user-friendly websites
+          while learning modern web development.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View My Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="avatar">AK</div>
+        <h3>Developer in Progress</h3>
+        <p>Turning ideas into digital experiences.</p>
+        <div class="status"><span></span> Open to learning opportunities</div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-description">
+        I am a Bachelor of Computer Applications (BCA) student at
+        Shri Ram Group of College, Muzaffarnagar. I enjoy creating
+        websites and improving my programming skills. I am currently
+        developing my knowledge of frontend and backend technologies
+        through practical projects.
+      </p>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React.js</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">Java & DSA</div>
+          <div class="skill">Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <p class="eyebrow">SOME OF MY WORK</p>
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-number">01</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website to introduce myself, showcase my skills
+             and share my development journey.</p>
+          <p class="project-tech">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">02</span>
+          <h3>College Placement Management</h3>
+          <p>A college project concept for organizing student details,
+             company information and placement applications.</p>
+          <p class="project-tech">Node.js · Express · MySQL</p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">03</span>
+          <h3>Web Development Practice</h3>
+          <p>A collection of practice exercises focused on responsive
+             layouts, reusable components and interactive interfaces.</p>
+          <p class="project-tech">HTML · CSS · JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-description">
+          Have a project idea or an opportunity to share? Send me a message.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+            placeholder="Enter your name" required>
+
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email"
+            placeholder="Enter your email" required>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="Write your message..." required></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aditya Kumar. Built with HTML, CSS & JavaScript.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
